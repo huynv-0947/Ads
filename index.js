@@ -2,7 +2,6 @@ const clickAbles = [
   { parent: 'overlay', child: 'close' },
   { parent: 'quangcaopc', child: 'closepc' }
 ];
-const PlayPageElementClass = [];
 const regexp = new RegExp("^https://xem.90p.tv/.*.html$", 'i');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
         banner.parentElement.style.display = 'none';
       })
     }
-  }, 100);
+  }, 150);
 })
