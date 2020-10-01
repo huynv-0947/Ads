@@ -1,0 +1,32 @@
+{
+  "name": "Remove Ads",
+  "version": "1.0",
+  "description": "Remove trash ads",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_title": "Hello ads!",
+    "default_icon": {
+      "16": "images/safari-16.png",
+      "32": "images/safari-32.png",
+      "48": "images/safari-48.png"
+    }
+  },
+  "icons": {
+    "16": "images/safari-16.png",
+    "32": "images/safari-32.png",
+    "48": "images/safari-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://xem.90p.tv/", "https://xem.90p.tv/*.html"],
+      "css": ["style.css"],
+      "js": ["index.js"]
+    }
+  ],
+  "manifest_version": 2
+}
